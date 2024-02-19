@@ -1,166 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Ticketing System</title>
-
-     <!-- Links of Google Fonts -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ena Paribahan</title>
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet"/>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style file -->
+    <link rel="stylesheet" href="styles/style.css" />
     <!-- Styles -->
     <style>
-        .font-raleway {
-          font-family: "Raleway", sans-serif;
-        }
-        .font-inter {
-          font-family: "Inter", sans-serif;
-        }
+      .font-raleway {
+        font-family: "Raleway", sans-serif;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
     </style>
-      <!-- Daisy and Tailwind's Links-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Daisy and Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header class="mr-20 ml-20">
-        <nav>
-            <div class="navbar bg-base-100">
-              <div class="navbar-start">
-                <div class="dropdown">
-                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h8m-8 6h16"/>
-                    </svg>
-                  </div>
-                  <ul
-                    tabindex="0"
-                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                  </ul>
-                </div>
-                <a class="btn btn-ghost text-xl pl-0"><span class="font-raleway text-4xl font-extrabold">E-Ticket</span></a>
+  </head>
+  <body class="">
+    <header class="container mx-auto px-1 lg:px-24">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
-              <div class="navbar-center hidden lg:flex">
-                <ul
-                  class="menu menu-horizontal px-1 font-medium font-raleway text-lg">
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Destination</a></li>
-                  <li><a>Search</a></li>
-                </ul>
-              </div>
-              <div class="navbar-end">
-                <a class="btn border-[1px] border-[#1DD100] bg-[#1DD1001A]"><span class="font-bold text-xl font-raleway">Bus</span><img src="images/bus-icon.png" alt="" srcset=""/></a>
-              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
             </div>
-        </nav>
+            <a class="btn btn-ghost text-xl pl-0"
+              ><span class="font-raleway text-4xl font-extrabold"
+                >E-Ticket</span
+              ></a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 font-medium font-raleway text-lg"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn border-[1px] border-[#1DD100] bg-[#1DD1001A]"
+              ><span class="font-bold text-xl font-raleway">Bus</span>
+              <img src="images/bus-icon.png" alt="" srcset=""
+            /></a>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
-        <!-- Banner Section -->
-        <section class="container mx-auto px-1 lg:px-24">
-            <div
-              class="hero h-[500px] border-0"
-              style="
-                background-image: url(./images/banner.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 100%;">
-              <div class="hero-overlay"></div>
-              <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md">
-                  <h1 class="mb-3 text-5xl font-raleway text-white font-extrabold text-center">
-                    End-to-End Travel with
-                    <br/>
-                    <span class="text-[#1DD100]">Ena Paribahan</span>
-                  </h1>
-                  <p class="mb-5 font-inter text-lg text-[#FFFFFF]">
-                    Yes, you can run unit tests and view the results directly within
-                    the app. The integrated testing features allow for a streamlined.
-                  </p>
-                  <button
-                    class="btn font-raleway font-bold text-xl bg-[#1DD100] border-0">
-                    Buy Tickets
-                  </button>
-                </div>
-              </div>
-            </div>
-        </section>
-
-        <!-- Offer with PromoCode Section -->
-
-        <section class="container mx-auto px-1 lg:px-24 mt-16 mb-24">
-            <h1 class="text-center font-raleway font-bold text-4xl mb-12">
-              Best Offers for you
-            </h1>
-            <div class="flex gap-6">
-              <div class="flex flex-1 h-[200px] bg-[#FFBF0F] rounded-3xl">
-                <div class="ml-[51px] mt-[40px]">
-                  <h2 class="font-inter text-[40px] font-black">15% OFF</h2>
-                  <h3 class="font-inter font-semibold text-xl">
-                    on your next purchase
-                  </h3>
-                  <p class="font-inter font-medium text-lg mt-2 text-gray-600">
-                    use by january 2024
-                  </p>
-                </div>
-                <img src="./images/cupon-devider.png" alt="" srcset="" />
-                <div class="ml-6 mt-16">
-                  <h2 class="font-raleway font-bold text-3xl text-center">NEW15</h2>
-                  <p class="font-raleway font-medium text-xl text-[ #03071266] text-gray-600">
-                    Coupon Code
-                  </p>
-                </div>
-              </div>
-              <div class="flex flex-1 h-[200px] bg-[#F78C9C] rounded-3xl">
-                <div class="ml-[51px] mt-[40px]">
-                  <h2 class="font-inter text-[40px] font-black">20% OFF</h2>
-                  <h3 class="font-inter font-semibold text-xl">
-                    on your next purchase
-                  </h3>
-                  <p class="font-inter font-medium text-lg mt-2 text-gray-600">
-                    use by january 2024
-                  </p>
-                </div>
-                <img src="./images/cupon-devider.png" alt="" srcset="" />
-                <div class="ml-6 mt-16">
-                  <h2 class="font-raleway font-bold text-3xl text-center">
-                    Couple 20
-                  </h2>
-                  <p class="font-raleway font-medium text-xl text-[ #03071266] text-gray-600">
-                    Coupon Code
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center justify-center">
+    <main class="">
+      <!-- Hero Section -->
+      <section class="container mx-auto px-1 lg:px-24">
+        <div
+          class="hero h-[500px] border-0"
+          style="
+            background-image: url(images/banner.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+          "
+        >
+          <div class="hero-overlay"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-6xl font-raleway text-white font-extrabold">
+                End-to-End Travel with <br />
+                <span class="text-[#1DD100]">Ena Paribahan</span>
+              </h1>
+              <p class="mb-5 font-inter text-lg text-[#FFFFFF]">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
               <button
-                class="btn font-raleway font-bold text-xl text-[#1DD100] bg-white border-1 border-[#1DD100] mt-[62px]">
-                See All Offers
+                class="btn font-raleway font-bold text-xl bg-[#1DD100] border-0"
+              >
+                Buy Tickets
               </button>
             </div>
-        </section>
-
-        <!-- Dashboard Section -->
-        <section
-        class="w-full bg-[#F7F8F8] rounded-t-[88px] border-t-[#1DD100] border-t-[2px]">
+          </div>
+        </div>
+      </section>
+      <!-- Best Offer -->
+      <section class="container mx-auto px-1 lg:px-24 mt-16 mb-24">
+        <h1 class="text-center font-raleway font-bold text-4xl mb-12">
+          Best Offers for you
+        </h1>
+        <div class="flex gap-6">
+          <div class="flex flex-1 h-[200px] bg-[#FFBF0F] rounded-3xl">
+            <div class="ml-[51px] mt-[40px]">
+              <h2 class="font-inter text-[40px] font-black">15% OFF</h2>
+              <h3 class="font-inter font-semibold text-xl">
+                on your next purchase
+              </h3>
+              <p class="font-inter font-medium text-lg mt-2">
+                use by january 2024
+              </p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" srcset="" />
+            <div class="ml-6 mt-16">
+              <h2 class="font-raleway font-bold text-3xl text-center">NEW15</h2>
+              <p class="font-raleway font-medium text-xl text-[ #03071266]">
+                Coupon Code
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-1 h-[200px] bg-[#F78C9C] rounded-3xl">
+            <div class="ml-[51px] mt-[40px]">
+              <h2 class="font-inter text-[40px] font-black">20% OFF</h2>
+              <h3 class="font-inter font-semibold text-xl">
+                on your next purchase
+              </h3>
+              <p class="font-inter font-medium text-lg mt-2">
+                use by january 2024
+              </p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" srcset="" />
+            <div class="ml-6 mt-16">
+              <h2 class="font-raleway font-bold text-3xl text-center">
+                Couple 20
+              </h2>
+              <p class="font-raleway font-medium text-xl text-[ #03071266]">
+                Coupon Code
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <button
+            class="btn font-raleway font-bold text-xl text-[#1DD100] bg-white border-1 border-[#1DD100] mt-[62px]"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- Ticket Dashboard -->
+      <section
+        class="w-full bg-[#F7F8F8] rounded-t-[88px] border-t-[#1DD100] border-t-[2px]"
+      >
         <div class="container mx-auto px-1 lg:px-24">
           <h1 class="text-center font-raleway text-4xl font-bold mt-24 mb-6">
             Ena Paribahan
@@ -170,7 +192,7 @@
             app. The integrated <br />
             testing features allow for a streamlined .
           </p>
-          <!-- Route, Departure, Schedule and Bus Category Section -->
+          <!-- Route Section -->
           <div class="flex h-[418px] mb-10 bg-white mt-12 rounded-3xl flex-1">
             <div class="p-8 w-[75%]">
               <div class="flex justify-between items-center">
@@ -179,53 +201,67 @@
                     class="w-[68px] h-[48px]"
                     src="images/bus-logo.png"
                     alt=""
-                    srcset=""/>
+                    srcset=""
+                  />
                   <div class="ml-4">
                     <p class="font-raleway font-bold text-[32px]">
-                      Greenline Paribahan
+                      Ena Paribahan
                     </p>
                     <span
                       class="font-inter text-lg font-normal text-[#03071299]"
-                      >Coach-009-web ! AC_Business Class</span>
+                      >Coach-009-web ! AC_Business Class</span
+                    >
                   </div>
                 </div>
                 <div
-                  class="flex gap-2 items-center justify-center rounded-xl p-[17px] border bg-[#1DD10026]">
+                  class="flex gap-2 items-center justify-center rounded-xl p-[17px] border bg-[#1DD10026]"
+                >
                   <img src="images/seat-green.png" alt="" srcset="" /><span
+                    id="seat-left"
                     class="font-inter text-lg text-[#1DD100] font-medium"
-                    >40 Seats left</span>
+                    >40 Seats left</span
+                  >
                 </div>
               </div>
+              
 
               <div class="p-8 w-full bg-[#F7F8F8] mt-6 rounded-3xl space-y-6">
                 <div class="flex justify-between">
                   <span
                     class="font-raleway text-lg font-semibold text-[#03071299]"
-                    >Route</span>
+                    >Route</span
+                  >
                   <span class="font-raleway font-semibold text-lg"
-                    >Dhaka-Sylhet</span>
+                    >Dhaka-Sylhet</span
+                  >
                 </div>
                 <hr />
                 <div class="flex justify-between">
                   <span
                     class="font-raleway text-lg font-semibold text-[#03071299]"
-                    >Departure Time</span>
+                    >Departure Time</span
+                  >
                   <span class="font-raleway font-semibold text-lg"
-                    >9:00 PM</span>
+                    >9:00 PM</span
+                  >
                 </div>
                 <hr />
                 <div class="flex justify-evenly">
                   <span
                     class="p-4 bg-[#0307120D] font-inter font-medium border rounded-xl text-base"
-                    >Boarding Point - Laxmipur</span>
+                    >Boarding Point - Laxmipur</span
+                  >
                   <span
                     class="p-4 bg-[#0307120D] font-inter font-medium border rounded-xl text-base"
-                    >Dropping Point - Bogura</span>
+                    >Dropping Point - Bogura</span
+                  >
                   <span
                     class="p-4 bg-[#0307120D] font-inter font-medium border rounded-xl text-base"
-                    >Est. Time - 11 Hour</span>
+                    >Est. Time - 11 Hour</span
+                  >
                 </div>
               </div>
+              <!-- Route, Departure time, Boarding Complete -->
             </div>
 
             <img class="" src="images/info-devider.png" alt="" srcset="" />
@@ -235,325 +271,449 @@
                 src="images/fare.png"
                 class="block m-auto"
                 alt=""
-                srcset=""/>
+                srcset=""
+              />
               <h1 class="font-raleway font-bold text-[32px] text-center">
                 550 Taka
               </h1>
               <p
-                class="font-raleway font-semibold text-2xl text-center text-[#03071299]">
+                class="font-raleway font-semibold text-2xl text-center text-[#03071299]"
+              >
                 Per Seat
               </p>
             </div>
           </div>
-          <!-- Seat Selection Section -->
-        <!-- </div> -->
-      <div class="mt-6 flex bg-white rounded-2xl w-full">
-        <div class="w-[60%] space-y-4 p-8 border-r-4 border-dotted">
-          <h1 class="font-raleway font-semibold text-2xl ">Select Your Seat</h1>
-          <hr />
-          <div class="flex justify-between">
-            <span class="flex font-semibold text-gray-500"
-              ><img
-                src="images/seat-gray.png"
-                class="w-full"
-                alt=""
-                srcset=""
-              />Available</span> 
-            <span class="flex"
-              ><img
-                src="images/seat-green.png"
-                alt=""
-                srcset=""
-              />Selected</span>
-          </div>
-          <hr />
-          <!-- Steering Part -->
-          <div class="flex justify-end">
-            <div
-              class="w-[110px] h-[56px] bg-[#0307121A] flex justify-center items-center rounded-xl">
-              <svg
-                class="w-[32px] h-[32px]"
-                width="26.000000"
-                height="26.000000"
-                viewBox="0 0 26 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs />
-                <path
-                  id="Vector"
-                  d="M1.91333 17.5922C2.5166 19.0481 3.40039 20.371 4.51465 21.4853C5.62891 22.5996 6.9519 23.4835 8.40771 24.0865C9.86377 24.6896 11.4241 25 13 25C14.5759 25 16.1362 24.6896 17.5923 24.0865C19.0481 23.4835 20.3711 22.5996 21.4854 21.4853C22.5996 20.371 23.4834 19.0481 24.0867 17.5922C24.6897 16.1363 25 14.5759 25 13C25 11.4241 24.6897 9.86371 24.0867 8.40781C23.4834 6.9519 22.5996 5.62903 21.4854 4.51471C20.3711 3.40042 19.0481 2.51651 17.5923 1.91345C16.1362 1.31039 14.5759 1 13 1C11.4241 1 9.86377 1.31039 8.40771 1.91345C6.9519 2.51651 5.62891 3.40042 4.51465 4.51471C3.40039 5.62903 2.5166 6.9519 1.91333 8.40781C1.3103 9.86371 1 11.4241 1 13C1 14.5759 1.3103 16.1363 1.91333 17.5922ZM11.1145 14.8856C11.6145 15.3857 12.2927 15.6667 13 15.6667C13.7073 15.6667 14.3855 15.3857 14.8855 14.8856C15.3857 14.3855 15.6667 13.7072 15.6667 13C15.6667 12.2928 15.3857 11.6145 14.8855 11.1144C14.3855 10.6143 13.7073 10.3333 13 10.3333C12.2927 10.3333 11.6145 10.6143 11.1145 11.1144C10.6143 11.6145 10.3333 12.2928 10.3333 13C10.3333 13.7072 10.6143 14.3855 11.1145 14.8856ZM13 15.6667L13 25M10.3333 13L1.33325 10.3333M15.6667 13L24.6667 10.3333"
-                  stroke="#030712"
-                  stroke-opacity="0.700000"
-                  stroke-width="2.000000"
-                  stroke-linejoin="round"
-                  stroke-linecap="round"/>
-              </svg>
-            </div>
-          </div>
-          <!-- Passenger Seats Part -->
-          <div class="flex">
-            <!-- A to Z Part-->
-            <div class="grid grid-cols-1 gap-[32px] mr-6">
-              <span
-                class="py-[17px] flex justify-center items-center rounded-xl">A</span>
-              <span
-                class="py-[17px] flex justify-center items-center rounded-xl">B</span>
-              <span
-                class="py-[17px] flex justify-center items-center rounded-xl">C</span>
-              <span
-                class="py-[17px] flex justify-center items-center rounded-xl">D</span>
-              <span
-                class="py-[17px] flex justify-center items-center rounded-xl">E</span>
-              <span
-                class="py-[17px] flex justify-center items-center rounded-xl">F</span>
-              <span
-                class="py-[17px] flex justify-center items-center rounded-xl">G</span>
-              <span
-                class="py-[17px] flex justify-center items-center rounded-xl">H</span>
-              <span
-                class="py-[17px] flex justify-center items-center rounded-xl">I</span>
-              <span
-                class="py-[17px] flex justify-center items-center rounded-xl">J</span>
-            </div>
-            <!-- A1 - J4 -->
-            <div class="flex gap-[66px]">
-              <div class="grid grid-cols-2 gap-[25px]">
-                <button onclick="buttonClicked('a1')" id="a1"
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  A1
-                </button>
-                <button onclick="buttonClicked('a2')" id="a2"
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  A2
-                </button>
-                <button onclick="buttonClicked('b1')" id="b1"
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  B1
-                </button>
-                <button onclick="buttonClicked('b2')" id="b2"
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  B2
-                </button>
-                <button onclick="buttonClicked('c1')" id="c1"
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  C1
-                </button>
-                <button onclick="buttonClicked('c2')" id="c2"
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  C2
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  D1
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  D2
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  E1
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  E2
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  F1
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  F2
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  G1
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  G2
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  H1
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  H2
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  I1
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  I2
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  J1
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  J2
-                </button>
+          <!-- Seat and Form Section -->
+          <div class="mt-6 flex bg-white rounded-2xl w-full mb-7">
+            <!-- Left Side -->
+            <div class="w-[60%] space-y-4 p-8 border-r-4 border-dotted">
+              <h1 class="font-raleway text-2xl font-semibold">Select Your Seat</h1>
+              <hr />
+              <div class="flex justify-between">
+                <span class="flex font-inter text-[#03071280] text-lg font-medium gap-2 justify-center items-center"
+                  ><img
+                    src="images/seat-gray.png"
+                    class="w-full border-2 border-dashed"
+                    alt=""
+                    srcset=""
+                  />Available</span
+                >
+                <span class="flex font-inter text-[#1DD100] text-lg font-medium gap-2 justify-center items-center"
+                  ><img class="border-2 border-dashed"
+                    src="images/seat-green.png"
+                    alt=""
+                    srcset=""
+                  />Selected</span
+                >
               </div>
-              <div class="grid grid-cols-2 gap-[25px]">
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  A3
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  A4
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  B3
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  B4
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  C3
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  C4
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  D3
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  D4
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  E3
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  E4
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  F3
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  F4
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  G3
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  G4
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  H3
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  H4
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  I3
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  I4
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  J3
-                </button>
-                <button
-                  class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl">
-                  J4
-                </button>
+              <hr />
+              <!-- Steering photo -->
+              <div class="flex justify-end">
+                <div
+                  class="w-[110px] h-[56px] bg-[#0307121A] flex justify-center items-center rounded-xl"
+                >
+                  <svg
+                    class="w-[32px] h-[32px]"
+                    width="26.000000"
+                    height="26.000000"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <defs />
+                    <path
+                      id="Vector"
+                      d="M1.91333 17.5922C2.5166 19.0481 3.40039 20.371 4.51465 21.4853C5.62891 22.5996 6.9519 23.4835 8.40771 24.0865C9.86377 24.6896 11.4241 25 13 25C14.5759 25 16.1362 24.6896 17.5923 24.0865C19.0481 23.4835 20.3711 22.5996 21.4854 21.4853C22.5996 20.371 23.4834 19.0481 24.0867 17.5922C24.6897 16.1363 25 14.5759 25 13C25 11.4241 24.6897 9.86371 24.0867 8.40781C23.4834 6.9519 22.5996 5.62903 21.4854 4.51471C20.3711 3.40042 19.0481 2.51651 17.5923 1.91345C16.1362 1.31039 14.5759 1 13 1C11.4241 1 9.86377 1.31039 8.40771 1.91345C6.9519 2.51651 5.62891 3.40042 4.51465 4.51471C3.40039 5.62903 2.5166 6.9519 1.91333 8.40781C1.3103 9.86371 1 11.4241 1 13C1 14.5759 1.3103 16.1363 1.91333 17.5922ZM11.1145 14.8856C11.6145 15.3857 12.2927 15.6667 13 15.6667C13.7073 15.6667 14.3855 15.3857 14.8855 14.8856C15.3857 14.3855 15.6667 13.7072 15.6667 13C15.6667 12.2928 15.3857 11.6145 14.8855 11.1144C14.3855 10.6143 13.7073 10.3333 13 10.3333C12.2927 10.3333 11.6145 10.6143 11.1145 11.1144C10.6143 11.6145 10.3333 12.2928 10.3333 13C10.3333 13.7072 10.6143 14.3855 11.1145 14.8856ZM13 15.6667L13 25M10.3333 13L1.33325 10.3333M15.6667 13L24.6667 10.3333"
+                      stroke="#030712"
+                      stroke-opacity="0.700000"
+                      stroke-width="2.000000"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- Seats -->
+              <div class="flex">
+                <!-- A-Z -->
+                <div class="grid grid-cols-1 gap-[32px] mr-6">
+                  <span
+                    class="py-[17px] flex justify-center items-center rounded-xl"
+                    >A</span
+                  >
+                  <span
+                    class="py-[17px] flex justify-center items-center rounded-xl"
+                    >B</span
+                  >
+                  <span
+                    class="py-[17px] flex justify-center items-center rounded-xl"
+                    >C</span
+                  >
+                  <span
+                    class="py-[17px] flex justify-center items-center rounded-xl"
+                    >D</span
+                  >
+                  <span
+                    class="py-[17px] flex justify-center items-center rounded-xl"
+                    >E</span
+                  >
+                  <span
+                    class="py-[17px] flex justify-center items-center rounded-xl"
+                    >F</span
+                  >
+                  <span
+                    class="py-[17px] flex justify-center items-center rounded-xl"
+                    >G</span
+                  >
+                  <span
+                    class="py-[17px] flex justify-center items-center rounded-xl"
+                    >H</span
+                  >
+                  <span
+                    class="py-[17px] flex justify-center items-center rounded-xl"
+                    >I</span
+                  >
+                  <span
+                    class="py-[17px] flex justify-center items-center rounded-xl"
+                    >J</span
+                  >
+                </div>
+                <!-- A1 - J4 -->
+                <div class="flex gap-[66px]">
+                  <div class="grid grid-cols-2 gap-[25px]">
+                    <button
+                      onclick="buttonClicked('A1')"
+                      id="A1"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      A1
+                    </button>
+                    <button
+                      onclick="buttonClicked('A2')"
+                      id="A2"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      A2
+                    </button>
+                    <button
+                      onclick="buttonClicked('B1')"
+                      id="B1"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      B1
+                    </button>
+                    <button
+                      onclick="buttonClicked('B2')"
+                      id="B2"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      B2
+                    </button>
+                    <button
+                      onclick="buttonClicked('C1')"
+                      id="C1"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      C1
+                    </button>
+                    <button
+                      onclick="buttonClicked('C2')"
+                      id="C2"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      C2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      D1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      D2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      E1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      E2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      F1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      F2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      G1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      G2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      H1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      H2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      I1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      I2
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      J1
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      J2
+                    </button>
+                  </div>
+                  <div class="grid grid-cols-2 gap-[25px]">
+                    <button
+                      id="A3"
+                      onclick="buttonClicked('A3')"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      A3
+                    </button>
+                    <button
+                      id="A4"
+                      onclick="buttonClicked('A4')"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      A4
+                    </button>
+                    <button
+                      id="B3"
+                      onclick="buttonClicked('B3')"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      B3
+                    </button>
+                    <button
+                      id="B4"
+                      onclick="buttonClicked('B4')"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      B4
+                    </button>
+                    <button
+                      id="B5"
+                      onclick="buttonClicked('B5')"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      C3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      C4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      D3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      D4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      E3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      E4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      F3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      F4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      G3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      G4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      H3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      H4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      I3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      I4
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      J3
+                    </button>
+                    <button
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    >
+                      J4
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="p-8 space-y-6 w-[40%]">
+              <h1 class="text-2xl font-raleway font-semibold">Seat Details</h1>
+              <hr />
+              <!-- Seat status -->
+              <div class="p-8 space-y-4 bg-[#F7F8F8] rounded-xl">
+                <div class="flex justify-between">
+                  <span class="font-inter text-base font-medium"
+                    >Seat
+                    <span id="selected-seat" class="bg-[#1DD100] rounded-[5px] p-[2px]"
+                      >0</span
+                    >
+                  </span>
+                  <span class="font-inter text-base font-medium">Class</span>
+                  <span class="font-inter text-base font-medium">Price</span>
+                </div>
+                <hr />
+               
+                <div id="seat-number" class="space-y-2"></div>
+                <hr />
+                <div class="flex justify-between">
+                  <span class="font-inter text-base font-medium">Total Price</span>
+                  <span class="font-inter text-base font-medium" id="total-price">BDT 00</span>
+                </div>
+                <!-- Coupon code -->
+                <div
+                  id="coupon-div"
+                  class="flex justify-between bg-white rounded-2xl"
+                >
+                  <input
+                    type="text"
+                    name=""
+                    onclick="coupon()"
+                    id="coupon-code"
+                    class="border-0 px-4"
+                    placeholder="Have a coupon?"
+                  />
+                  <button
+                    id="coupon-button"
+                    onclick="couponApply()"
+                    class="btn bg-[#1DD100] text-white"
+                    disabled
+                  >
+                    Apply
+                  </button>
+                </div>
+                <hr />
+                <!-- Grand Total -->
+                <div class="flex justify-between">
+                  <span class="font-inter text-base font-medium">Grand Total</span>
+                  <span class="font-inter text-base font-medium" id="grand-total">BDT 00</span>
+                </div>
+              </div>
+              <!-- Username Email Number Form -->
+              <div class="space-y-3">
+                <h1 class="font-inter text-base font-semibold">Passenger Name</h1>
+                <label class="input input-bordered flex items-center gap-2">
+                  <input type="text" class="grow" placeholder="Username" />
+                </label>
+                <h1 class="font-inter text-base font-semibold">Passenger Number*</h1>
+                <label class="input input-bordered flex items-center gap-2">
+                  <input type="text" class="grow" placeholder="number" />
+                </label>
+                <h1 class="font-inter text-base font-semibold">Email ID</h1>
+                <label class="input input-bordered flex items-center gap-2">
+                  <input type="email" class="grow" placeholder="Email" />
+                </label>
+              </div>
+              <button
+                onclick="location.href = 'success.html';"
+                class="btn text-white bg-[#1DD100] rounded-xl w-full"
+              >
+                <a href="/success.html">Next</a>
+              </button>
+              
+              <div class="flex justify-evenly">
+                <p class="underline">Terms and Conditon</p>
+                <p class="underline">Cancellation Policy</p>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Forms and Payment Section -->
-        <div class="p-8 space-y-6 w-[40%] ">
-          <h1>Select Your Seats</h1>
-          <hr />
-          
-          <div class="p-8 space-y-4 bg-[#F7F8F8] rounded-xl">
-            <div class=" flex justify-between ">
-              <span>Seat <span id="selected-seat" class="bg-green-400 rounded-lg p-2">0</span> </span>
-              <span>Class</span>
-              <span>Price</span>
-            </div>
-            <hr>
-            
-            <div id="seat-number" class="space-y-2">
-  
-            </div>
-            <hr>
-            <div class="flex justify-between">
-              <span>Total Price</span>
-              <span id="total-price">BDT 00</span>
-            </div>
-            <!-- PromoCode Section -->
-            <div class="flex justify-between bg-white rounded-2xl">
-              <input type="text" name="" id="" class="border-0 px-4" placeholder="Have a coupon?">
-              <button class="btn">Apply</button>
-            </div>
-            <!-- Total Price -->
-            <div class="flex justify-between">
-              <span>Grand Total</span>
-              <span>BDT 00</span>
-            </div>
-            
-          </div>
-          <!-- Name, Contact and Email Address Form -->
-          <div class="space-y-3">
-            <h1>Passenger Name*</h1>
-            <label class="input input-bordered flex items-center gap-2">
-              <input type="text" class="grow" placeholder="Enter Your Name" />
-            </label>
-            <h1>Passenger Number*</h1>
-            <label class="input input-bordered flex items-center gap-2">
-              <input type="text" class="grow" placeholder="Enter Your Phone Number"/>
-            </label>
-            <h1>Email ID</h1>
-            <label class="input input-bordered flex items-center gap-2">
-              <input type="email" class="grow" placeholder="Enter Your Email ID" />
-            </label>
-          </div>
-          <button class="btn bg-[#1DD100] rounded-xl w-full">Next</button>
-          <div class="flex justify-evenly">
-            <p class="underline">Terms and Condition</p>
-            <p class="underline">Cancellation Policy</p>
-          </div>
-        </div>
-      <!-- </div> -->
-    <!-- </div> -->
-      </div>
-
-      <!-- Took an extra div at the starting point of Seat Selection and Payment Section and the top most and the last *div. And if any error occurs later know that this div is the ultimate culprit! -->
-
-      <!-- Forms and Payment Section -->
-
-    </section>
-
+      </section>
     </main>
-    <footer>
-
+    <footer class="">
+      <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <nav class="grid grid-flow-col gap-4">
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+          </div>
+        </nav> 
+        <aside>
+          <p>Copyright © 2024 - All right reserved by RL Industries Ltd</p>
+        </aside>
+      </footer>
     </footer>
-    
-</body>
+    <script src="script/script.js"></script>
+  </body>
 </html>
